@@ -1,19 +1,25 @@
-# Demos
+# CloudBrew 2023
 
-## Preparing
+Held 7.-8.12.2023 in Lamot, Mechelen, Belgium.
+
+Session delivered 8.12.2023 0900-1000.
+
+## Demos
+
+### Preparing
 
 PIM for Tenant Root as Contributor
 PIM for needed Azure Lighthouse Groups
 
-## Demo 1
+### Demo 1
 
-### Scoped PIM to Windows Admin Center Access
+#### Scoped PIM to Windows Admin Center Access
 
 Target to Barn
 
 Leave to activate
 
-### Arc + SSH + SSH Agent for keys
+#### Arc + SSH + SSH Agent for keys
 
 Get *az ssh* command from portal
 
@@ -22,13 +28,13 @@ az login
 az ssh arc --subscription "X" --resource-group "rg-hybridmanagement-prod-001" --name "Barn" --local-user administrator
 ```
 
-### WAC
+#### WAC
 
 Scheduled tasks
 Files
 Remote Desktop
 
-## Demo 2
+### Demo 2
 
 Play around Azure Automation Account
   
@@ -54,7 +60,7 @@ AzureDiagnostics
 Create alert
 Discuss targets
 
-## Demo 3
+### Demo 3
 
 Discuss about PIM and Azure Lighthouse permissions
 
