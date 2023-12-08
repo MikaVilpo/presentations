@@ -2,6 +2,8 @@
 
 Held 7.-8.12.2023 in Lamot, Mechelen, Belgium.
 
+## How infra admins can move from scheduled tasks to cloud and event based activities
+
 Session delivered 8.12.2023 0900-1000.
 
 ## Demos
