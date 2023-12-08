@@ -30,6 +30,14 @@ Remote Desktop
 
 ## Demo 2
 
+Play around Azure Automation Account
+  
+* Runbooks
+  * Output
+  * Schedules
+* Variables and secrets
+* Identities
+
 Filter to error logs of Azure Automation Account
 
 ```kql:
@@ -38,6 +46,7 @@ Filter to error logs of Azure Automation Account
 // To create an alert for this query, click '+ New alert rule'
 AzureDiagnostics 
 | where ResourceProvider == "MICROSOFT.AUTOMATION" and Category == "JobStreams" and StreamType_s == "Error" 
+| where RunbookName_s == 'Get-FirstLinesOfFile'
 | project TimeGenerated , RunbookName_s , StreamType_s , _ResourceId , ResultDescription , JobId_g 
 
 ```
@@ -52,6 +61,9 @@ Discuss about PIM and Azure Lighthouse permissions
 ```kql:
 // Resource Explorer
 // Get All servers from ALL customers
+Resources
+| where (type == 'microsoft.compute/virtualmachines') or (type == 'microsoft.hybridcompute/machines') 
+
 
 ```
 
